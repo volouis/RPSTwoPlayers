@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -19,30 +19,40 @@
             storageBucket: "rps-multiplayer-30d79.appspot.com",
             messagingSenderId: "548342898551"
         };
-        firebase.initializeApp(config);
-    </script>
+    firebase.initializeApp(config);
+</script>
 </head>
 <body>
 
     <h1 style="text-align: center">Rock Paper Scissor!!!</h1>
 
-    <p class="random nameInput"><input type="text" placeholder="Name" id="name"><button id="nameSubmit">Submit</button></p>
+    <p class="random nameInput"><input type="text" placeholder="Name" id="name" onkeydown="myFunction1(event)"><button id="nameSubmit">Submit</button></p>
 
     <div id="game">
         <div id="player1" data-fill="unfill">
             <p id="text1">Waiting for Player 1</p>
+            <div id="player1Btn">  
+                <button id="rockBtn1" class="btn1" value="rock">Rock</button> <br>
+                <button id="paperBtn1" class="btn1" value="paper">Paper</button> <br>
+                <button id="scissorBtn1" class="btn1" value="scissor">Scissor</button>
+            </div>
         </div>
     
         <div id="results"></div>
     
         <div id="player2">
             <p id="text2">Waiting for Player 2</p>
+            <div id="player2Btn">  
+                <button id="rockBtn2" class="btn2" value="rock">Rock</button> <br>
+                <button id="paperBtn2" class="btn2" value="paper">Paper</button> <br>
+                <button id="scissorBtn2" class="btn2" value="scissor">Scissor</button>
+            </div>
         </div>
     </div>
 
     <div id="messages"></div>
 
-    <p class="random"><input type="text" id="inputMessage"><button id="textSubmit">Enter</button></p>
+    <p class="random"><input type="text" id="inputMessage" onkeydown="myFunction(event)"><button id="textSubmit">Enter</button></p>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

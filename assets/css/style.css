@@ -1,6 +1,7 @@
 body{
     margin: auto;
     max-width: 900px;
+    background-color: #87BBA2;
 }
 
 #game{
@@ -41,6 +42,7 @@ body{
     border: solid 1px;
     margin: auto;
     margin-bottom: 10px;
+    overflow: auto;
 }
 
 #exampleInputEmail1{
@@ -54,4 +56,20 @@ body{
 
 #inputMessage{
     width: 600px;
+}
+
+#player1Btn{
+    text-align: center;
+}
+
+.btn1{
+    margin-bottom: 5px;
+}
+
+#player2Btn{
+    text-align: center;
+}
+
+.btn2{
+    margin-bottom: 5px;
 }
