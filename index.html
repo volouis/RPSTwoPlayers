@@ -31,22 +31,33 @@
     <div id="game">
         <div id="player1" data-fill="unfill">
             <p id="text1">Waiting for Player 1</p>
-            <div id="player1Btn">  
+            <div id="player1Btn" data-side="notpic">  
                 <button id="rockBtn1" class="btn1" value="rock">Rock</button> <br>
                 <button id="paperBtn1" class="btn1" value="paper">Paper</button> <br>
                 <button id="scissorBtn1" class="btn1" value="scissor">Scissor</button>
             </div>
+            <p id="select1" class="pick"></p>
+            <p id="scoreOne" class="score"></p>
         </div>
     
-        <div id="results"></div>
+        <div id="results">
+
+            <p id="playerOnePick" data-pick="no"></p>
+            <p id="playerTwoPick" data-pick="no"></p>
+
+            <p id="decision"></p>
+
+        </div>
     
         <div id="player2">
             <p id="text2">Waiting for Player 2</p>
-            <div id="player2Btn">  
+            <div id="player2Btn" data-side="notpic">  
                 <button id="rockBtn2" class="btn2" value="rock">Rock</button> <br>
                 <button id="paperBtn2" class="btn2" value="paper">Paper</button> <br>
                 <button id="scissorBtn2" class="btn2" value="scissor">Scissor</button>
             </div>
+            <p id="select2" class="pick"></p>
+            <p id="scoreTwo" class="score"></p>
         </div>
     </div>
 

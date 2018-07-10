@@ -11,7 +11,7 @@ body{
 
 #player1{
     width: 290px;
-    height: 150px;
+    height: 180px;
     float: left;
     border: solid 1px;
     margin-right: 10px;
@@ -19,7 +19,7 @@ body{
 
 #player2{
     width: 290px;
-    height: 150px;
+    height: 180px;
     float: left;
     border: solid 1px;
     margin-left: 10px;
@@ -50,15 +50,11 @@ body{
     margin: auto;
 }
 
-.random{
-    text-align: center;
-}
-
 #inputMessage{
     width: 600px;
 }
 
-#player1Btn{
+#player1Btn, .score, .random, .pick{
     text-align: center;
 }
 
